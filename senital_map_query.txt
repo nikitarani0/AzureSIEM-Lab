@@ -1,0 +1,1 @@
+FAILED_RDP_WITH_GEO_CL | summarize event_count=count() by sourcehost_cf, latitude_CF, longitude_CF, country_CF, label_CF, destinationhost_CF | where destinationhost != "samplehost" | where sourcehost_CF != ""
